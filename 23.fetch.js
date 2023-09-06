@@ -20,15 +20,15 @@ function sendRequest(method, url, body = null) {
   })
 }
 
-// sendRequest('GET', requestUrl)
-//   .then((data) => console.log(data))
-//   .catch((err) => console.log(err))
+sendRequest('GET', requestUrl)
+  .then((data) => console.log(data))
+  .catch((err) => console.log(err))
 
 const body = {
   name: 'Style',
   age: 25,
 }
 
-sendRequest('POST', requestUrl, body)
-  .then((data) => console.log(data))
-  .catch((err) => console.log(err))
+// sendRequest('POST', requestUrl, body)
+//   .then((data) => console.log(data))
+//   .catch((err) => console.log(err))
